@@ -1,0 +1,303 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, figure, figcaption, footer, header, menu, nav, section{
+	
+	margin: 0;
+	padding: 0;		
+	border: 0;
+	font-family: 'Montserrat', sans-serif;
+	vertical-align: baseline;
+	max-width: 1680px;
+}
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+
+h2{
+	font-size: 3em;
+	width: 100%;
+	margin: 10% auto 10% auto;
+}
+
+h3{
+	font-size: 1.8em;
+	margin: 2% auto 2% auto;
+
+}
+
+p{
+	font-size: 1.3em;
+
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body {
+	line-height: 1;
+	-webkit-text-size-adjust: none;
+
+}
+
+header, header h1, header nav{
+	display: flex;
+	align-items: center;
+}
+header{
+	
+	background-color: #dbd0d0;
+	font-size: 1.2em;
+	padding: 0.6em;
+}
+
+header h1{
+	width: 50%;
+}
+
+header nav{
+	justify-content: space-around;
+	width: 50%;
+
+}
+
+header nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: inherit;
+}
+
+header nav a:hover{
+	text-decoration: underline;
+}
+
+
+article{
+	margin: 5%  auto 5% auto;
+	width: 80%;
+	max-width: 1680px;
+}
+
+.main-info{
+	display: flex;
+	overflow: hidden;
+	max-height: 500px;
+}
+
+.big-img{
+	max-width: 500px;
+	min-width: 600px;
+}
+
+#apple-logo{
+	width: 50px;
+}
+
+.description{
+	display: inherit;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 200px;
+	padding: 2%;
+	width: 60%;
+	max-height: 600px;
+}
+
+.description h2{
+	margin-top: 10%;
+	text-align: center;
+}
+
+.description p{
+	font-size: 1.3em;
+	line-height: 3em;
+	text-align: center;
+	position: relative;
+	bottom: 5%;
+}
+
+
+.biography p{
+	text-align: justify;
+	line-height: 2em;
+	margin-bottom: 2em;
+
+	}
+
+.curiosities img{
+	width: 30em;
+	margin-bottom: 20vh;
+	vertical-align: text-top;
+}
+
+
+.curiosities div{
+	display: block;
+	margin-bottom: 20vh;
+	height: 350px;
+}
+
+.curiosities p{
+	line-height: 1.2em;
+}
+
+.apple-product, .iphone, .product-model, .macbook, .imac{
+	display: flex;
+	justify-content: space-around;
+}
+
+#desc{
+	font-size: 1em;
+	text-align: center;
+	position: relative;
+	bottom: 3em;
+}
+
+.product-card{
+	width: 33.3333%
+}
+.product-img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.product-model{
+	margin-bottom: 10em;
+}
+
+.second-product{
+	position: relative;
+	left: 1em;
+}
+
+#iphone6s, #iphone8, #macbook, #macbook-air, #imac, #mac-pro{
+	position: relative;
+}
+
+#iphone6s{
+	top: .9em;
+}
+#iphone8{
+	top: .3em;
+}
+#macbook{
+	top: 1.75em;
+}
+#macbook-air{
+	top: 1.65em;
+}
+#imac{
+	top: 1.2em;
+}
+#mac-pro{
+	top: .3em;
+}
+footer{
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	font-size: 1.2em;
+}
+footer p{
+	opacity: 0.5;
+}
+.hr { 
+	background-color: black;
+    display: block;
+    margin-top: 12em;
+    margin-bottom: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+/* Smaller devices */
+
+@media screen and (max-width: 1680px) {
+
+	body{
+		font-size: 80%;
+	}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+	body{
+		font-size: 80%;
+	}
+	footer{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.iphone, .product-model, .macbook, .imac, .product-card{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.product-card{
+		width: 70%;
+	}
+	.product-model{
+		margin-bottom: 6em;
+	}
+	#desc{
+		bottom: 2em;
+	}
+	.apple p{
+		margin-bottom: 4em;
+	}
+	footer{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	
+	body{
+		font-size: 80%;
+	}
+	header{
+		flex-wrap: wrap;
+		letter-spacing: 0.2em;
+
+	}
+	header h1{
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 5%;
+	}
+	header nav{
+		width: 100%;
+	}
+	.biography h2{
+		margin-bottom: 20%;
+	}
+
+
+	.curiosities div{
+		margin-bottom:35vh;
+	}
+	.curiosities img{
+		float: none;
+		display: block;
+		margin: 10vh auto 5vh auto;
+	}
+	footer{
+		visibility: hidden;
+	}
+}
