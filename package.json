@@ -1,0 +1,25 @@
+{
+  "name": "tribute-page",
+  "version": "1.0.0",
+  "description": "Steve Jobs Tribute Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanskikamil/tribute-page.git"
+  },
+  "author": "Kamil Urbański",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urbanskikamil/tribute-page/issues"
+  },
+  "homepage": "https://github.com/urbanskikamil/tribute-page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "eslint": "^6.1.0"
+  }
+}
